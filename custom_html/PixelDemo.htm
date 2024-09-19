@@ -1,0 +1,189 @@
+﻿<!-- Copyright Epic Games, Inc. All Rights Reserved. -->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="/player.css">
+    <script src="socket.io.js"></script>
+    <script type="text/javascript" src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script type="text/javascript" src="/scripts/webRtcPlayer.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="PixelDemo.js"></script>
+    <link type="text/css" rel="stylesheet" href="PixelDemo.css">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- For iPhone X the following makes it use the entire screen space for the webpage https://webkit.org/blog/7929/designing-websites-for-iphone-x/ -->
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+</head>
+
+<body onload="load(); onParagonLoad()">
+    <div class="wrapper">
+        <div id="content" class="container">
+        </div>
+        <div class="row">
+            <div class="col">
+                <div id="player" style="top: 0px; left: 0px; width: 1696px; height: 844.5px; cursor: -webkit-grab;">
+                    <div id="configuration">
+                        <div class="row mt-4">
+                            <div class="col">
+                                <button class="btn btn-primary" onclick="sceneiconvisible(5, 0, 1)">显示闸门标签</button>
+                                <button class="btn btn-primary" onclick="sceneiconvisible(5, 0, 0)">隐藏闸门标签</button>
+                                <button class="btn btn-primary" onclick="sceneiconvisible(5, 1, 1)">显示上下游水位</button>
+                                <button class="btn btn-primary" onclick="sceneiconvisible(5, 1, 0)">隐藏上下游水位</button>
+                                <button class="btn btn-primary" onclick="sceneiconvisible(5, 2, 1)">显示瞬时流量</button>
+                                <button class="btn btn-primary" onclick="sceneiconvisible(5, 2, 0)">隐藏瞬时流量</button>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <button class="btn btn-primary" onclick="gateoperation(0, 0, 1,3,0)">打开闸门1</button>
+                                <button class="btn btn-primary" onclick="gateoperation(0, 1, 1,2,1)">打开闸门2</button>
+                                <button class="btn btn-primary" onclick="gateoperation(0, 2, 1,1,1)">打开闸门3</button>
+                                <button class="btn btn-primary" onclick="gateoperation(0, -1, 1,1,1)">全部打开</button>
+                                <button class="btn btn-primary" onclick="gateoperation(0, -1, 0,2,1)">全部关闭</button>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <button class="btn btn-primary" onclick="characterpatrol(6, 0, 1)">开始巡查</button>
+                                <button class="btn btn-primary" onclick="characterpatrol(6, 0, 0)">结束巡查</button>
+                                <button class="btn btn-primary" onclick="characterpatrol(6, 0, 2)">继续巡查</button>
+                                <button class="btn btn-primary" onclick="characterpatrol(6, 0, 3)">暂停巡查</button>
+                            </div>
+                        </div>
+                        <!-- Second row: Water level controls -->
+                        <div class="row mt-4">
+                            <div class="col">
+                                <label for="upstreamLevel">上游水位</label>
+                                <input type="range" id="upstreamLevel" min="0" max="6" step="0.01" value="2" oninput="updateWaterLevelDisplay('upstreamLevel', 'upstreamLevelDisplay', 0)">
+                                <span id="upstreamLevelDisplay">2</span>米
+                            </div>
+                            <div class="col">
+                                <label for="downstreamLevel">下游水位</label>
+                                <input type="range" id="downstreamLevel" min="0" max="6" step="0.01" value="1" oninput="updateWaterLevelDisplay('downstreamLevel', 'downstreamLevelDisplay', 1)">
+                                <span id="downstreamLevelDisplay">1</span>米
+                            </div>
+                            <div class="col">
+                                <label for="currentflow">瞬时流量</label>
+                                <input type="range" id="currentflow" min="1" max="10" step="0.01" value="1" oninput="updateWaterLevelDisplay('currentflow', 'currentflowDisplay', 2)">
+                                <span id="currentflowDisplay">1</span>立方米/秒
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-secondary" onclick="simulateWaterLevel()">确认模拟水位</button>
+                            </div>
+                        </div>
+        
+                        <!-- Third row: Flow controls -->
+                        <div class="row mt-4">
+                            <div class="col">
+                                <label for="upstreamFlow">上游流速</label>
+                                <input type="range" id="upstreamFlow" min="0" max="5" step="0.1" value="0.5" oninput="updateFlowDisplay('upstreamFlow', 'upstreamFlowDisplay')">
+                                <span id="upstreamFlowDisplay">0.5</span>立方米/秒
+                            </div>
+                            <div class="col">
+                                <label for="downstreamFlow">下游流速</label>
+                                <input type="range" id="downstreamFlow" min="0" max="5" step="0.1" value="0.5" oninput="updateFlowDisplay('downstreamFlow', 'downstreamFlowDisplay')">
+                                <span id="downstreamFlowDisplay">0.5</span>立方米/秒
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-secondary" onclick="simulateFlow()">确认模拟流速</button>
+                            </div>
+                        </div>
+        
+                        <!-- Fourth row: View buttons -->
+                        <div class="row mt-4">
+                            <div class="col">
+                                <button class="btn btn-info" onclick="vediopatrol(3, 100)">初始视角</button>
+                                <button class="btn btn-info" onclick="vediopatrol(3, 101)">初始远眺视角</button>
+                                <button class="btn btn-info" onclick="vediopatrol(3, 102)">俯瞰视角</button>
+                                <button class="btn btn-info" onclick="vediopatrol(3, 1)">闸门1视角</button>
+                                <button class="btn btn-info" onclick="vediopatrol(3, 2)">闸门2视角</button>
+                                <button class="btn btn-info" onclick="vediopatrol(3, 3)">闸门3视角</button>
+                                <button class="btn btn-info" onclick="vediopatrol(3, 4)">启闭机1视角</button>
+                                <button class="btn btn-info" onclick="vediopatrol(3, 5)">启闭机2视角</button>
+                                <button class="btn btn-info" onclick="vediopatrol(3, 6)">启闭机3视角</button>
+                                <button class="btn btn-info" onclick="vediopatrol(3, 7)">控制箱1视角</button>
+                                <button class="btn btn-info" onclick="vediopatrol(3, 8)">控制箱2视角</button>
+                                <button class="btn btn-info" onclick="vediopatrol(3, 9)">控制箱3视角</button>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <button class="btn btn-info" onclick="droneWannder(4, 0)">结束漫游</button>
+                                <button class="btn btn-info" onclick="droneWannder(4, 1)">开始漫游</button>
+                            </div>
+                        </div>
+                        <!--<div id="button" type="button" onclick="onConfigurationOne()">Option One</div>
+                        <div id="button" type="button" onclick="onConfigurationTwo()">Option Two</div>-->
+                        <div id="ck-fullscreen">
+                            <img src="images/MaximiseToFullscreen.png" alt="Maximise to Fullscreen" id="fullscreen-img" class="fullscreen-btn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+
+        <div id="overlay" class="overlay">
+            <div>
+                <div id="qualityStatus" class="greyStatus">&#9679</div>
+                <div id="overlayButton">+</div>
+                
+            </div>
+           </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script>
+        function updateWaterLevelDisplay(sliderId, displayId, index) {
+            var slider = document.getElementById(sliderId);
+            var display = document.getElementById(displayId);
+            display.textContent = slider.value;
+            waterleveloperation(1, index, slider.value);
+        }
+
+        function simulateWaterLevel() {
+            var upstreamLevel = document.getElementById('upstreamLevel').value;
+            var downstreamLevel = document.getElementById('downstreamLevel').value;
+            var currentflow = document.getElementById('currentflow').value;
+            waterleveloperation(1, 0, upstreamLevel);
+            waterleveloperation(1, 1, downstreamLevel);
+            waterleveloperation(1, 2, currentflow);
+    }
+
+        function updateFlowDisplay(sliderId, displayId) {
+            var slider = document.getElementById(sliderId);
+            var display = document.getElementById(displayId);
+            display.textContent = slider.value;
+        }
+
+        function simulateFlow() {
+            var upstreamFlow = document.getElementById('upstreamFlow').value;
+            var downstreamFlow = document.getElementById('downstreamFlow').value;
+            flowoperation(2, 0, upstreamFlow);
+            flowoperation(2, 1, downstreamFlow);
+        }
+
+        // Ensure player resizes with window
+        window.addEventListener('resize', resizePlayer);
+
+        function resizePlayer() {
+            var playerElement = document.getElementById('player');
+            playerElement.style.width = window.innerWidth + 'px';
+            playerElement.style.height = window.innerHeight + 'px';
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            resizePlayer();
+        });
+    </script>
+</body>
+</html>
