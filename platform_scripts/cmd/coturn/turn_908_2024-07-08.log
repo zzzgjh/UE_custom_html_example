@@ -1,0 +1,587 @@
+0: : log file opened: turn_908_2024-07-08.log
+0: : Relay address to use: 10.206.0.17
+0: : Listener address to use: 10.206.0.17
+0: : 
+RFC 3489/5389/5766/5780/6062/6156 STUN/TURN Server
+Version Coturn-4.5.2 'dan Eider'
+0: : 
+Max number of open files/sockets allowed for this process: 3200
+0: : 
+Due to the open files/sockets limitation,
+max supported number of TURN Sessions possible is: 1000 (approximately)
+0: : 
+
+==== Show him the instruments, Practical Frost: ====
+
+0: : TLS supported
+0: : DTLS supported
+0: : DTLS 1.2 supported
+0: : TURN/STUN ALPN supported
+0: : Third-party authorization (oAuth) supported
+0: : GCM (AEAD) supported
+0: : OpenSSL compile-time version: OpenSSL 1.1.1f  31 Mar 2020 (0x1010106f)
+0: : 
+0: : SQLite is not supported
+0: : Redis is not supported
+0: : PostgreSQL is not supported
+0: : MySQL is not supported
+0: : MongoDB is not supported
+0: : 
+0: : Default Net Engine version: 2 (UDP thread per network endpoint)
+
+=====================================================
+
+0: : Domain name: 
+0: : Default realm: PixelStreaming
+0: : pid file created: C:\coturn.pid
+0: : IO method (main listener thread): poll
+0: : IPv4: On this platform, I am using alternative behavior of TTL according to RFC 5766.
+0: : IPv6: On this platform, I am using alternative behavior of TTL (HOPLIMIT) according to RFC 6156.
+0: : IPv4: On this platform, I am using alternative behavior of TOS according to RFC 5766.
+0: : WARNING: I cannot support STUN CHANGE_REQUEST functionality because only one IP address is provided
+0: : Wait for relay ports initialization...
+0: :   relay 10.206.0.17 initialization...
+0: :   relay 10.206.0.17 initialization done
+0: : Relay ports initialization done
+0: : IO method (general relay thread): poll
+0: : turn server id=0 created
+0: : IO method (general relay thread): poll
+0: : turn server id=1 created
+0: : IO method (general relay thread): poll
+0: : turn server id=2 created
+0: : IO method (udp listener/relay thread): poll
+0: : IO method (general relay thread): poll
+0: : turn server id=3 created
+0: : turn server id=128 created
+0: : IPv4. UDP listener opened on: 10.206.0.17:19303
+0: : IPv4. TCP listener opened on : 10.206.0.17:19303
+0: : Total UDP servers: 1
+0: : Total General servers: 4
+0: : IO method (auth thread): poll
+0: : IO method (auth thread): poll
+0: : IO method (admin thread): poll
+33: : session 128000000000000001: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+33: : session 128000000000000002: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+33: : session 128000000000000003: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+33: : session 128000000000000004: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+33: : session 128000000000000005: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+33: : session 128000000000000006: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+33: : session 128000000000000001: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+33: : session 128000000000000003: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+33: : session 128000000000000002: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+33: : session 128000000000000007: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+33: : IPv4. Local relay addr: 10.206.0.17:51775
+33: : session 128000000000000001: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+33: : session 128000000000000001: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+33: : IPv4. Local relay addr: 10.206.0.17:51272
+33: : session 128000000000000002: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+33: : session 128000000000000002: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+33: : IPv4. Local relay addr: 10.206.0.17:62392
+33: : session 128000000000000003: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+33: : session 128000000000000003: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+33: : session 128000000000000007: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+33: : IPv4. Local relay addr: 10.206.0.17:52714
+33: : session 128000000000000007: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+33: : session 128000000000000007: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+33: : session 128000000000000001: refreshed, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=0
+33: : session 128000000000000001: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet REFRESH processed, success
+33: : session 128000000000000002: refreshed, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=0
+33: : session 128000000000000002: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet REFRESH processed, success
+33: : session 128000000000000003: peer 192.168.16.110 lifetime updated: 300
+33: : session 128000000000000003: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+33: : session 128000000000000003: peer 115.216.54.191 lifetime updated: 300
+33: : session 128000000000000003: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+33: : session 128000000000000007: peer 115.216.54.191 lifetime updated: 300
+33: : session 128000000000000007: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+33: : session 128000000000000007: peer 10.206.0.17 lifetime updated: 300
+33: : session 128000000000000007: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+33: : session 128000000000000003: peer 115.216.54.191 lifetime updated: 300
+33: : session 128000000000000003: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+33: : session 128000000000000003: peer 10.206.0.17 lifetime updated: 300
+33: : session 128000000000000003: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+34: : session 128000000000000002: usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=4, rb=280, sp=4, sb=408
+34: : session 128000000000000002: peer usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=0, rb=0, sp=0, sb=0
+34: : session 128000000000000002: closed (2nd stage), user <PixelStreamingUser> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2049, reason: allocation timeout
+34: : session 128000000000000002: delete: realm=<PixelStreaming>, username=<PixelStreamingUser>
+34: : session 128000000000000001: usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=4, rb=280, sp=4, sb=408
+34: : session 128000000000000001: peer usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=0, rb=0, sp=0, sb=0
+34: : session 128000000000000001: closed (2nd stage), user <PixelStreamingUser> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2050, reason: allocation timeout
+34: : session 128000000000000001: delete: realm=<PixelStreaming>, username=<PixelStreamingUser>
+43: : session 128000000000000003: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+43: : session 128000000000000007: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+53: : session 128000000000000003: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+53: : session 128000000000000007: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+63: : session 128000000000000003: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+63: : session 128000000000000007: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+73: : session 128000000000000007: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+73: : session 128000000000000003: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+83: : session 128000000000000007: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+83: : session 128000000000000003: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+93: : session 128000000000000004: usage: realm=<PixelStreaming>, username=<>, rp=1, rb=20, sp=1, sb=92
+93: : session 128000000000000004: peer usage: realm=<PixelStreaming>, username=<>, rp=0, rb=0, sp=0, sb=0
+93: : session 128000000000000004: closed (2nd stage), user <> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2052, reason: allocation watchdog determined stale session state
+93: : session 128000000000000005: usage: realm=<PixelStreaming>, username=<>, rp=1, rb=20, sp=1, sb=92
+93: : session 128000000000000005: peer usage: realm=<PixelStreaming>, username=<>, rp=0, rb=0, sp=0, sb=0
+93: : session 128000000000000005: closed (2nd stage), user <> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2053, reason: allocation watchdog determined stale session state
+93: : session 128000000000000006: usage: realm=<PixelStreaming>, username=<>, rp=1, rb=20, sp=1, sb=92
+93: : session 128000000000000006: peer usage: realm=<PixelStreaming>, username=<>, rp=0, rb=0, sp=0, sb=0
+93: : session 128000000000000006: closed (2nd stage), user <> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2051, reason: allocation watchdog determined stale session state
+93: : session 128000000000000007: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+93: : session 128000000000000003: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+98: : session 128000000000000003: refreshed, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=0
+98: : session 128000000000000003: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet REFRESH processed, success
+98: : session 128000000000000007: refreshed, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=0
+98: : session 128000000000000007: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet REFRESH processed, success
+98: : session 128000000000000008: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+98: : session 128000000000000009: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+98: : session 128000000000000010: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+98: : session 128000000000000011: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+98: : session 128000000000000012: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+98: : session 128000000000000013: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+98: : session 128000000000000008: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+98: : session 128000000000000009: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+98: : session 128000000000000010: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+98: : IPv4. Local relay addr: 10.206.0.17:53868
+98: : session 128000000000000009: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+98: : session 128000000000000009: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+98: : IPv4. Local relay addr: 10.206.0.17:49251
+98: : session 128000000000000008: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+98: : session 128000000000000008: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+98: : IPv4. Local relay addr: 10.206.0.17:59896
+98: : session 128000000000000010: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+98: : session 128000000000000010: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+98: : session 128000000000000014: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+98: : session 128000000000000014: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+98: : IPv4. Local relay addr: 10.206.0.17:51756
+98: : session 128000000000000014: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+98: : session 128000000000000014: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+98: : session 128000000000000014: peer 115.216.54.191 lifetime updated: 300
+98: : session 128000000000000014: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+98: : session 128000000000000014: peer 115.216.54.191 lifetime updated: 300
+98: : session 128000000000000014: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+98: : session 128000000000000014: peer 10.206.0.17 lifetime updated: 300
+98: : session 128000000000000014: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+98: : session 128000000000000009: refreshed, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=0
+98: : session 128000000000000009: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet REFRESH processed, success
+98: : session 128000000000000010: refreshed, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=0
+98: : session 128000000000000010: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet REFRESH processed, success
+98: : session 128000000000000008: peer 192.168.16.110 lifetime updated: 300
+98: : session 128000000000000008: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+99: : session 128000000000000008: peer 115.216.54.191 lifetime updated: 300
+99: : session 128000000000000008: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+99: : session 128000000000000008: peer 115.216.54.191 lifetime updated: 300
+99: : session 128000000000000008: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+99: : session 128000000000000008: peer 10.206.0.17 lifetime updated: 300
+99: : session 128000000000000008: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+99: : session 128000000000000003: usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=14, rb=880, sp=14, sb=1280
+99: : session 128000000000000003: peer usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=0, rb=0, sp=0, sb=0
+99: : session 128000000000000003: closed (2nd stage), user <PixelStreamingUser> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2048, reason: allocation timeout
+99: : session 128000000000000003: delete: realm=<PixelStreaming>, username=<PixelStreamingUser>
+99: : session 128000000000000003: peer 115.216.54.191 deleted
+99: : session 128000000000000003: peer 10.206.0.17 deleted
+99: : session 128000000000000003: peer 192.168.16.110 deleted
+99: : session 128000000000000007: usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=12, rb=640, sp=12, sb=1120
+99: : session 128000000000000007: peer usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=0, rb=0, sp=0, sb=0
+99: : session 128000000000000007: closed (2nd stage), user <PixelStreamingUser> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2054, reason: allocation timeout
+99: : session 128000000000000007: delete: realm=<PixelStreaming>, username=<PixelStreamingUser>
+99: : session 128000000000000007: peer 115.216.54.191 deleted
+99: : session 128000000000000007: peer 10.206.0.17 deleted
+99: : session 128000000000000010: usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=4, rb=280, sp=4, sb=408
+99: : session 128000000000000010: peer usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=0, rb=0, sp=0, sb=0
+99: : session 128000000000000010: closed (2nd stage), user <PixelStreamingUser> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2057, reason: allocation timeout
+99: : session 128000000000000010: delete: realm=<PixelStreaming>, username=<PixelStreamingUser>
+99: : session 128000000000000009: usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=4, rb=280, sp=4, sb=408
+99: : session 128000000000000009: peer usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=0, rb=0, sp=0, sb=0
+99: : session 128000000000000009: closed (2nd stage), user <PixelStreamingUser> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2056, reason: allocation timeout
+99: : session 128000000000000009: delete: realm=<PixelStreaming>, username=<PixelStreamingUser>
+108: : session 128000000000000008: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+108: : session 128000000000000014: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+118: : session 128000000000000008: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+118: : session 128000000000000014: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+128: : session 128000000000000008: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+128: : session 128000000000000014: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+138: : session 128000000000000008: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+138: : session 128000000000000014: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+148: : session 128000000000000008: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+148: : session 128000000000000014: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+158: : session 128000000000000011: usage: realm=<PixelStreaming>, username=<>, rp=1, rb=20, sp=1, sb=92
+158: : session 128000000000000011: peer usage: realm=<PixelStreaming>, username=<>, rp=0, rb=0, sp=0, sb=0
+158: : session 128000000000000011: closed (2nd stage), user <> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2060, reason: allocation watchdog determined stale session state
+158: : session 128000000000000012: usage: realm=<PixelStreaming>, username=<>, rp=1, rb=20, sp=1, sb=92
+158: : session 128000000000000012: peer usage: realm=<PixelStreaming>, username=<>, rp=0, rb=0, sp=0, sb=0
+158: : session 128000000000000012: closed (2nd stage), user <> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2058, reason: allocation watchdog determined stale session state
+158: : session 128000000000000013: usage: realm=<PixelStreaming>, username=<>, rp=1, rb=20, sp=1, sb=92
+158: : session 128000000000000013: peer usage: realm=<PixelStreaming>, username=<>, rp=0, rb=0, sp=0, sb=0
+158: : session 128000000000000013: closed (2nd stage), user <> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2059, reason: allocation watchdog determined stale session state
+158: : session 128000000000000008: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+158: : session 128000000000000014: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+168: : session 128000000000000008: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+168: : session 128000000000000014: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+178: : session 128000000000000008: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+178: : session 128000000000000014: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+188: : session 128000000000000008: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+188: : session 128000000000000014: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+189: : session 128000000000000014: refreshed, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=0
+189: : session 128000000000000014: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet REFRESH processed, success
+189: : session 128000000000000008: refreshed, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=0
+189: : session 128000000000000008: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet REFRESH processed, success
+190: : session 128000000000000014: usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=18, rb=1084, sp=16, sb=1476
+190: : session 128000000000000014: peer usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=0, rb=0, sp=2, sb=192
+190: : session 128000000000000014: closed (2nd stage), user <PixelStreamingUser> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2061, reason: allocation timeout
+190: : session 128000000000000014: delete: realm=<PixelStreaming>, username=<PixelStreamingUser>
+190: : session 128000000000000014: peer 115.216.54.191 deleted
+190: : session 128000000000000014: peer 10.206.0.17 deleted
+190: : session 128000000000000008: usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=17, rb=940, sp=17, sb=1556
+190: : session 128000000000000008: peer usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=0, rb=0, sp=0, sb=0
+190: : session 128000000000000008: closed (2nd stage), user <PixelStreamingUser> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2055, reason: allocation timeout
+190: : session 128000000000000008: delete: realm=<PixelStreaming>, username=<PixelStreamingUser>
+190: : session 128000000000000008: peer 115.216.54.191 deleted
+190: : session 128000000000000008: peer 10.206.0.17 deleted
+190: : session 128000000000000008: peer 192.168.16.110 deleted
+282: : session 128000000000000015: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+282: : session 128000000000000016: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+282: : session 128000000000000017: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+282: : session 128000000000000015: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+282: : session 128000000000000016: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+282: : session 128000000000000017: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+282: : IPv4. Local relay addr: 10.206.0.17:61009
+282: : session 128000000000000015: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+282: : session 128000000000000015: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+282: : IPv4. Local relay addr: 10.206.0.17:61998
+282: : session 128000000000000017: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+282: : session 128000000000000017: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+282: : IPv4. Local relay addr: 10.206.0.17:50581
+282: : session 128000000000000016: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+282: : session 128000000000000016: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+282: : session 128000000000000018: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+282: : session 128000000000000019: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+282: : session 128000000000000020: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+282: : session 128000000000000021: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+283: : session 128000000000000021: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+283: : session 128000000000000015: refreshed, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=0
+283: : session 128000000000000015: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet REFRESH processed, success
+283: : session 128000000000000016: refreshed, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=0
+283: : session 128000000000000016: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet REFRESH processed, success
+283: : IPv4. Local relay addr: 10.206.0.17:53563
+283: : session 128000000000000021: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+283: : session 128000000000000021: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+283: : session 128000000000000017: peer 192.168.16.110 lifetime updated: 300
+283: : session 128000000000000017: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+283: : session 128000000000000021: peer 115.216.54.191 lifetime updated: 300
+283: : session 128000000000000021: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+283: : session 128000000000000021: peer 115.216.54.191 lifetime updated: 300
+283: : session 128000000000000021: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+283: : session 128000000000000021: peer 10.206.0.17 lifetime updated: 300
+283: : session 128000000000000021: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+283: : session 128000000000000017: peer 115.216.54.191 lifetime updated: 300
+283: : session 128000000000000017: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+283: : session 128000000000000017: peer 115.216.54.191 lifetime updated: 300
+283: : session 128000000000000017: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+283: : session 128000000000000017: peer 10.206.0.17 lifetime updated: 300
+283: : session 128000000000000017: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+284: : session 128000000000000015: usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=4, rb=280, sp=4, sb=408
+284: : session 128000000000000015: peer usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=0, rb=0, sp=0, sb=0
+284: : session 128000000000000015: closed (2nd stage), user <PixelStreamingUser> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2063, reason: allocation timeout
+284: : session 128000000000000015: delete: realm=<PixelStreaming>, username=<PixelStreamingUser>
+284: : session 128000000000000016: usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=4, rb=280, sp=4, sb=408
+284: : session 128000000000000016: peer usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=0, rb=0, sp=0, sb=0
+284: : session 128000000000000016: closed (2nd stage), user <PixelStreamingUser> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2064, reason: allocation timeout
+284: : session 128000000000000016: delete: realm=<PixelStreaming>, username=<PixelStreamingUser>
+292: : session 128000000000000017: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+293: : session 128000000000000021: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+302: : session 128000000000000017: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+303: : session 128000000000000021: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+303: : session 128000000000000017: refreshed, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=0
+303: : session 128000000000000017: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet REFRESH processed, success
+303: : session 128000000000000021: refreshed, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=0
+303: : session 128000000000000021: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet REFRESH processed, success
+304: : session 128000000000000022: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+304: : session 128000000000000023: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+304: : session 128000000000000024: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+304: : session 128000000000000022: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+304: : session 128000000000000025: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+304: : session 128000000000000023: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+304: : session 128000000000000026: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+304: : session 128000000000000024: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+304: : session 128000000000000027: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+304: : IPv4. Local relay addr: 10.206.0.17:57002
+304: : session 128000000000000022: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+304: : session 128000000000000022: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+304: : IPv4. Local relay addr: 10.206.0.17:59592
+304: : session 128000000000000023: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+304: : session 128000000000000023: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+304: : IPv4. Local relay addr: 10.206.0.17:61494
+304: : session 128000000000000024: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+304: : session 128000000000000024: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+304: : session 128000000000000028: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+304: : session 128000000000000022: refreshed, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=0
+304: : session 128000000000000022: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet REFRESH processed, success
+304: : session 128000000000000024: refreshed, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=0
+304: : session 128000000000000024: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet REFRESH processed, success
+304: : session 128000000000000028: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+304: : session 128000000000000023: peer 192.168.16.110 lifetime updated: 300
+304: : session 128000000000000023: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+304: : IPv4. Local relay addr: 10.206.0.17:63032
+304: : session 128000000000000028: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+304: : session 128000000000000028: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+304: : session 128000000000000023: peer 115.216.54.191 lifetime updated: 300
+304: : session 128000000000000023: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+304: : session 128000000000000023: peer 115.216.54.191 lifetime updated: 300
+304: : session 128000000000000023: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+304: : session 128000000000000017: usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=10, rb=800, sp=10, sb=912
+304: : session 128000000000000017: peer usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=0, rb=0, sp=0, sb=0
+304: : session 128000000000000017: closed (2nd stage), user <PixelStreamingUser> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2062, reason: allocation timeout
+304: : session 128000000000000017: delete: realm=<PixelStreaming>, username=<PixelStreamingUser>
+304: : session 128000000000000017: peer 115.216.54.191 deleted
+304: : session 128000000000000017: peer 10.206.0.17 deleted
+304: : session 128000000000000017: peer 192.168.16.110 deleted
+304: : session 128000000000000021: usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=9, rb=680, sp=9, sb=832
+304: : session 128000000000000021: peer usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=0, rb=0, sp=0, sb=0
+304: : session 128000000000000021: closed (2nd stage), user <PixelStreamingUser> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2068, reason: allocation timeout
+304: : session 128000000000000021: delete: realm=<PixelStreaming>, username=<PixelStreamingUser>
+304: : session 128000000000000021: peer 115.216.54.191 deleted
+304: : session 128000000000000021: peer 10.206.0.17 deleted
+305: : session 128000000000000024: usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=4, rb=280, sp=4, sb=408
+305: : session 128000000000000024: peer usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=0, rb=0, sp=0, sb=0
+305: : session 128000000000000024: closed (2nd stage), user <PixelStreamingUser> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2070, reason: allocation timeout
+305: : session 128000000000000024: delete: realm=<PixelStreaming>, username=<PixelStreamingUser>
+305: : session 128000000000000022: usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=4, rb=280, sp=4, sb=408
+305: : session 128000000000000022: peer usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=0, rb=0, sp=0, sb=0
+305: : session 128000000000000022: closed (2nd stage), user <PixelStreamingUser> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2071, reason: allocation timeout
+305: : session 128000000000000022: delete: realm=<PixelStreaming>, username=<PixelStreamingUser>
+314: : session 128000000000000023: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+314: : session 128000000000000028: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+314: : session 128000000000000028: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+324: : session 128000000000000023: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+324: : session 128000000000000023: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+324: : session 128000000000000028: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+334: : session 128000000000000023: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+334: : session 128000000000000028: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+342: : session 128000000000000018: usage: realm=<PixelStreaming>, username=<>, rp=1, rb=20, sp=1, sb=92
+342: : session 128000000000000018: peer usage: realm=<PixelStreaming>, username=<>, rp=0, rb=0, sp=0, sb=0
+342: : session 128000000000000018: closed (2nd stage), user <> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2067, reason: allocation watchdog determined stale session state
+342: : session 128000000000000019: usage: realm=<PixelStreaming>, username=<>, rp=1, rb=20, sp=1, sb=92
+342: : session 128000000000000019: peer usage: realm=<PixelStreaming>, username=<>, rp=0, rb=0, sp=0, sb=0
+342: : session 128000000000000019: closed (2nd stage), user <> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2066, reason: allocation watchdog determined stale session state
+342: : session 128000000000000020: usage: realm=<PixelStreaming>, username=<>, rp=1, rb=20, sp=1, sb=92
+342: : session 128000000000000020: peer usage: realm=<PixelStreaming>, username=<>, rp=0, rb=0, sp=0, sb=0
+342: : session 128000000000000020: closed (2nd stage), user <> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2065, reason: allocation watchdog determined stale session state
+344: : session 128000000000000023: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+344: : session 128000000000000028: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+344: : session 128000000000000023: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+349: : session 128000000000000028: refreshed, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=0
+349: : session 128000000000000028: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet REFRESH processed, success
+350: : session 128000000000000028: usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=9, rb=380, sp=9, sb=868
+350: : session 128000000000000028: peer usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=0, rb=0, sp=0, sb=0
+350: : session 128000000000000028: closed (2nd stage), user <PixelStreamingUser> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2075, reason: allocation timeout
+350: : session 128000000000000028: delete: realm=<PixelStreaming>, username=<PixelStreamingUser>
+354: : session 128000000000000029: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+354: : session 128000000000000023: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+364: : session 128000000000000025: usage: realm=<PixelStreaming>, username=<>, rp=1, rb=20, sp=1, sb=92
+364: : session 128000000000000025: peer usage: realm=<PixelStreaming>, username=<>, rp=0, rb=0, sp=0, sb=0
+364: : session 128000000000000025: closed (2nd stage), user <> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2073, reason: allocation watchdog determined stale session state
+364: : session 128000000000000026: usage: realm=<PixelStreaming>, username=<>, rp=1, rb=20, sp=1, sb=92
+364: : session 128000000000000026: peer usage: realm=<PixelStreaming>, username=<>, rp=0, rb=0, sp=0, sb=0
+364: : session 128000000000000026: closed (2nd stage), user <> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2072, reason: allocation watchdog determined stale session state
+364: : session 128000000000000027: usage: realm=<PixelStreaming>, username=<>, rp=1, rb=20, sp=1, sb=92
+364: : session 128000000000000027: peer usage: realm=<PixelStreaming>, username=<>, rp=0, rb=0, sp=0, sb=0
+364: : session 128000000000000027: closed (2nd stage), user <> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2074, reason: allocation watchdog determined stale session state
+364: : session 128000000000000029: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+364: : session 128000000000000023: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+374: : session 128000000000000029: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+374: : session 128000000000000023: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+384: : session 128000000000000029: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+384: : session 128000000000000023: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+394: : session 128000000000000029: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+395: : session 128000000000000023: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+404: : session 128000000000000029: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+405: : session 128000000000000023: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+414: : session 128000000000000029: usage: realm=<PixelStreaming>, username=<>, rp=6, rb=120, sp=6, sb=552
+414: : session 128000000000000029: peer usage: realm=<PixelStreaming>, username=<>, rp=0, rb=0, sp=0, sb=0
+414: : session 128000000000000029: closed (2nd stage), user <> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2075, reason: allocation watchdog determined stale session state
+414: : session 128000000000000030: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+415: : session 128000000000000023: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+424: : session 128000000000000030: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+425: : session 128000000000000023: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet BINDING processed, success
+434: : session 128000000000000030: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+444: : session 128000000000000030: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+454: : session 128000000000000030: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+464: : session 128000000000000030: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+474: : session 128000000000000030: usage: realm=<PixelStreaming>, username=<>, rp=6, rb=120, sp=6, sb=552
+474: : session 128000000000000030: peer usage: realm=<PixelStreaming>, username=<>, rp=0, rb=0, sp=0, sb=0
+474: : session 128000000000000030: closed (2nd stage), user <> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2075, reason: allocation watchdog determined stale session state
+474: : session 128000000000000031: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+484: : session 128000000000000031: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+494: : session 128000000000000031: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+504: : session 128000000000000031: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+514: : session 128000000000000031: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+524: : session 128000000000000031: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+534: : session 128000000000000031: usage: realm=<PixelStreaming>, username=<>, rp=6, rb=120, sp=6, sb=552
+534: : session 128000000000000031: peer usage: realm=<PixelStreaming>, username=<>, rp=0, rb=0, sp=0, sb=0
+534: : session 128000000000000031: closed (2nd stage), user <> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2075, reason: allocation watchdog determined stale session state
+534: : session 128000000000000032: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+544: : session 128000000000000023: peer 192.168.16.110 lifetime updated: 300
+544: : session 128000000000000023: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+544: : session 128000000000000023: peer 115.216.54.191 lifetime updated: 300
+544: : session 128000000000000023: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+544: : session 128000000000000023: peer 115.216.54.191 lifetime updated: 300
+544: : session 128000000000000023: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+544: : session 128000000000000032: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+555: : session 128000000000000032: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+558: : session 128000000000000023: refreshed, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=0
+558: : session 128000000000000023: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet REFRESH processed, success
+559: : session 128000000000000023: usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=24, rb=1280, sp=24, sb=2176
+559: : session 128000000000000023: peer usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=0, rb=0, sp=0, sb=0
+559: : session 128000000000000023: closed (2nd stage), user <PixelStreamingUser> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2069, reason: allocation timeout
+559: : session 128000000000000023: delete: realm=<PixelStreaming>, username=<PixelStreamingUser>
+559: : session 128000000000000023: peer 115.216.54.191 deleted
+559: : session 128000000000000023: peer 192.168.16.110 deleted
+594: : session 128000000000000032: usage: realm=<PixelStreaming>, username=<>, rp=3, rb=60, sp=3, sb=276
+594: : session 128000000000000032: peer usage: realm=<PixelStreaming>, username=<>, rp=0, rb=0, sp=0, sb=0
+594: : session 128000000000000032: closed (2nd stage), user <> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2075, reason: allocation watchdog determined stale session state
+659: : session 128000000000000033: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+659: : session 128000000000000034: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+659: : session 128000000000000035: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+659: : session 128000000000000033: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+659: : session 128000000000000035: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+659: : session 128000000000000034: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+659: : IPv4. Local relay addr: 10.206.0.17:59247
+659: : session 128000000000000035: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+659: : session 128000000000000035: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+659: : IPv4. Local relay addr: 10.206.0.17:52432
+659: : session 128000000000000033: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+659: : session 128000000000000033: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+659: : IPv4. Local relay addr: 10.206.0.17:60690
+659: : session 128000000000000034: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+659: : session 128000000000000034: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+659: : session 128000000000000036: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+659: : session 128000000000000037: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+659: : session 128000000000000038: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+659: : session 128000000000000039: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+659: : session 128000000000000039: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+659: : session 128000000000000033: refreshed, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=0
+659: : session 128000000000000033: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet REFRESH processed, success
+659: : session 128000000000000034: refreshed, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=0
+659: : session 128000000000000034: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet REFRESH processed, success
+659: : IPv4. Local relay addr: 10.206.0.17:64020
+659: : session 128000000000000039: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+659: : session 128000000000000039: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+659: : session 128000000000000035: peer 192.168.16.110 lifetime updated: 300
+659: : session 128000000000000035: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+659: : session 128000000000000039: peer 115.216.54.191 lifetime updated: 300
+659: : session 128000000000000039: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+659: : session 128000000000000039: peer 115.216.54.191 lifetime updated: 300
+659: : session 128000000000000039: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+659: : session 128000000000000039: peer 10.206.0.17 lifetime updated: 300
+659: : session 128000000000000039: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+659: : session 128000000000000035: peer 115.216.54.191 lifetime updated: 300
+659: : session 128000000000000035: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+659: : session 128000000000000035: peer 115.216.54.191 lifetime updated: 300
+659: : session 128000000000000035: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+659: : session 128000000000000035: peer 10.206.0.17 lifetime updated: 300
+659: : session 128000000000000035: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+660: : session 128000000000000034: usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=4, rb=280, sp=4, sb=408
+660: : session 128000000000000034: peer usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=0, rb=0, sp=0, sb=0
+660: : session 128000000000000034: closed (2nd stage), user <PixelStreamingUser> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2077, reason: allocation timeout
+660: : session 128000000000000034: delete: realm=<PixelStreaming>, username=<PixelStreamingUser>
+660: : session 128000000000000033: usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=4, rb=280, sp=4, sb=408
+660: : session 128000000000000033: peer usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=0, rb=0, sp=0, sb=0
+660: : session 128000000000000033: closed (2nd stage), user <PixelStreamingUser> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2078, reason: allocation timeout
+660: : session 128000000000000033: delete: realm=<PixelStreaming>, username=<PixelStreamingUser>
+665: : session 128000000000000039: refreshed, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=0
+665: : session 128000000000000039: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet REFRESH processed, success
+666: : session 128000000000000039: usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=7, rb=640, sp=7, sb=648
+666: : session 128000000000000039: peer usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=0, rb=0, sp=0, sb=0
+666: : session 128000000000000039: closed (2nd stage), user <PixelStreamingUser> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2082, reason: allocation timeout
+666: : session 128000000000000039: delete: realm=<PixelStreaming>, username=<PixelStreamingUser>
+666: : session 128000000000000039: peer 115.216.54.191 deleted
+666: : session 128000000000000039: peer 10.206.0.17 deleted
+687: : session 128000000000000040: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+687: : session 128000000000000041: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+687: : session 128000000000000042: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+687: : session 128000000000000043: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+687: : session 128000000000000044: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+687: : session 128000000000000045: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+687: : session 128000000000000046: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+687: : session 128000000000000047: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+687: : session 128000000000000048: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+687: : session 128000000000000049: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+687: : session 128000000000000050: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+687: : session 128000000000000051: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+687: : session 128000000000000040: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+687: : session 128000000000000041: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+687: : session 128000000000000042: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+687: : session 128000000000000043: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+687: : session 128000000000000044: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+687: : session 128000000000000045: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+687: : IPv4. Local relay addr: 10.206.0.17:58801
+687: : session 128000000000000040: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+687: : session 128000000000000040: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+687: : session 128000000000000052: realm <PixelStreaming> user <>: incoming packet BINDING processed, success
+687: : IPv4. Local relay addr: 10.206.0.17:59361
+687: : session 128000000000000042: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+687: : session 128000000000000042: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+687: : IPv4. Local relay addr: 10.206.0.17:53245
+687: : session 128000000000000041: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+687: : session 128000000000000041: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+687: : IPv4. Local relay addr: 10.206.0.17:58870
+687: : session 128000000000000043: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+687: : session 128000000000000043: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+687: : IPv4. Local relay addr: 10.206.0.17:50254
+687: : session 128000000000000044: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+687: : session 128000000000000044: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+687: : IPv4. Local relay addr: 10.206.0.17:50710
+687: : session 128000000000000045: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+687: : session 128000000000000045: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+687: : session 128000000000000046: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+687: : session 128000000000000047: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+687: : session 128000000000000048: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+687: : IPv4. Local relay addr: 10.206.0.17:62357
+687: : session 128000000000000046: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+687: : session 128000000000000046: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+687: : IPv4. Local relay addr: 10.206.0.17:62885
+687: : session 128000000000000047: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+687: : session 128000000000000047: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+687: : IPv4. Local relay addr: 10.206.0.17:57069
+687: : session 128000000000000048: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+687: : session 128000000000000048: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+687: : session 128000000000000052: realm <PixelStreaming> user <>: incoming packet message processed, error 401: Unauthorized
+688: : IPv4. Local relay addr: 10.206.0.17:63258
+688: : session 128000000000000052: new, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=600
+688: : session 128000000000000052: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet ALLOCATE processed, success
+688: : session 128000000000000052: peer 115.216.54.191 lifetime updated: 300
+688: : session 128000000000000052: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+688: : session 128000000000000052: peer 10.206.0.17 lifetime updated: 300
+688: : session 128000000000000052: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+688: : session 128000000000000052: peer 115.216.54.191 lifetime updated: 300
+688: : session 128000000000000052: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+688: : session 128000000000000052: peer 10.206.0.17 lifetime updated: 300
+688: : session 128000000000000052: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+688: : session 128000000000000047: refreshed, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=0
+688: : session 128000000000000047: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet REFRESH processed, success
+688: : session 128000000000000048: refreshed, realm=<PixelStreaming>, username=<PixelStreamingUser>, lifetime=0
+688: : session 128000000000000048: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet REFRESH processed, success
+688: : session 128000000000000046: peer 192.168.16.110 lifetime updated: 300
+688: : session 128000000000000046: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+688: : session 128000000000000046: peer 115.216.54.191 lifetime updated: 300
+688: : session 128000000000000046: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+688: : session 128000000000000046: peer 115.216.54.191 lifetime updated: 300
+688: : session 128000000000000046: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+688: : session 128000000000000046: peer 10.206.0.17 lifetime updated: 300
+688: : session 128000000000000046: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+688: : session 128000000000000046: peer 10.206.0.17 lifetime updated: 300
+688: : session 128000000000000046: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+688: : session 128000000000000052: peer 10.206.0.17 lifetime updated: 600
+688: : session 128000000000000052: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CHANNEL_BIND processed, success
+688: : session 128000000000000046: peer 10.206.0.17 lifetime updated: 600
+688: : session 128000000000000046: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CHANNEL_BIND processed, success
+689: : session 128000000000000046: peer 115.216.54.191 lifetime updated: 300
+689: : session 128000000000000046: realm <PixelStreaming> user <PixelStreamingUser>: incoming packet CREATE_PERMISSION processed, success
+689: : session 128000000000000047: usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=4, rb=280, sp=4, sb=408
+689: : session 128000000000000047: peer usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=0, rb=0, sp=0, sb=0
+689: : session 128000000000000047: closed (2nd stage), user <PixelStreamingUser> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2090, reason: allocation timeout
+689: : session 128000000000000047: delete: realm=<PixelStreaming>, username=<PixelStreamingUser>
+689: : session 128000000000000048: usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=4, rb=280, sp=4, sb=408
+689: : session 128000000000000048: peer usage: realm=<PixelStreaming>, username=<PixelStreamingUser>, rp=0, rb=0, sp=0, sb=0
+689: : session 128000000000000048: closed (2nd stage), user <PixelStreamingUser> realm <PixelStreaming> origin <>, local 10.206.0.17:19303, remote 115.216.54.191:2091, reason: allocation timeout
+689: : session 128000000000000048: delete: realm=<PixelStreaming>, username=<PixelStreamingUser>

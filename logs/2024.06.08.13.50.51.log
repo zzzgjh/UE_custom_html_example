@@ -1,0 +1,273 @@
+13:50:51.328 Config: {
+	"UseFrontend": false,
+	"UseMatchmaker": false,
+	"UseHTTPS": false,
+	"UseAuthentication": false,
+	"LogToFile": true,
+	"LogVerbose": true,
+	"HomepageFile": "player.html",
+	"AdditionalRoutes": {},
+	"EnableWebserver": true,
+	"MatchmakerAddress": "",
+	"MatchmakerPort": "9999",
+	"PublicIp": "1.13.24.188",
+	"HttpPort": 80,
+	"HttpsPort": 443,
+	"StreamerPort": 8888,
+	"SFUPort": 8889,
+	"MaxPlayerCount": -1,
+	"peerConnectionOptions": "{ \"iceServers\": [{\"urls\": [\"stun:stun.l.google.com:19302\",\"turn:1.13.24.188:19303\"], \"username\": \"PixelStreamingUser\", \"credential\": \"AnotherTURNintheroad\"}] }"
+}
+13:50:51.372 peerConnectionOptions = {"iceServers":[{"urls":["stun:stun.l.google.com:19302","turn:1.13.24.188:19303"],"username":"PixelStreamingUser","credential":"AnotherTURNintheroad"}]}
+13:50:51.378 Running Cirrus - The Pixel Streaming reference implementation signalling server for Unreal Engine 5.1.
+13:50:51.395 WebSocket listening for Streamer connections on :8888
+13:50:51.397 WebSocket listening for SFU connections on :8889
+13:50:51.398 WebSocket listening for Players connections on :80
+13:50:51.400 Http listening on *: 80
+13:50:51.421 Streamer connected: ::ffff:115.216.54.191
+13:50:51.461 Dropping new streamer connection, we already have a connected streamer
+13:50:51.510 Dropping new streamer connection, we already have a connected streamer
+13:50:51.559 Dropping new streamer connection, we already have a connected streamer
+13:50:51.611 Dropping new streamer connection, we already have a connected streamer
+13:50:51.659 Dropping new streamer connection, we already have a connected streamer
+13:50:51.663 Dropping new streamer connection, we already have a connected streamer
+13:50:51.724 Dropping new streamer connection, we already have a connected streamer
+13:50:51.780 Dropping new streamer connection, we already have a connected streamer
+13:50:51.827 Dropping new streamer connection, we already have a connected streamer
+13:50:51.885 Dropping new streamer connection, we already have a connected streamer
+13:50:51.933 Dropping new streamer connection, we already have a connected streamer
+13:50:51.994 Dropping new streamer connection, we already have a connected streamer
+13:50:52.049 Dropping new streamer connection, we already have a connected streamer
+13:50:52.103 Dropping new streamer connection, we already have a connected streamer
+13:50:52.152 Dropping new streamer connection, we already have a connected streamer
+13:50:52.195 Dropping new streamer connection, we already have a connected streamer
+13:50:52.237 Dropping new streamer connection, we already have a connected streamer
+13:50:52.282 Dropping new streamer connection, we already have a connected streamer
+13:50:52.340 Dropping new streamer connection, we already have a connected streamer
+13:50:52.395 Dropping new streamer connection, we already have a connected streamer
+13:50:52.442 Dropping new streamer connection, we already have a connected streamer
+13:50:52.494 Dropping new streamer connection, we already have a connected streamer
+13:50:52.545 Dropping new streamer connection, we already have a connected streamer
+13:50:52.605 Dropping new streamer connection, we already have a connected streamer
+13:50:52.659 Dropping new streamer connection, we already have a connected streamer
+13:50:52.711 Dropping new streamer connection, we already have a connected streamer
+13:50:52.762 Dropping new streamer connection, we already have a connected streamer
+13:50:52.810 Dropping new streamer connection, we already have a connected streamer
+13:50:52.864 Dropping new streamer connection, we already have a connected streamer
+13:50:52.918 Dropping new streamer connection, we already have a connected streamer
+13:50:52.967 Dropping new streamer connection, we already have a connected streamer
+13:50:53.013 Dropping new streamer connection, we already have a connected streamer
+13:50:53.057 Dropping new streamer connection, we already have a connected streamer
+13:50:53.108 Dropping new streamer connection, we already have a connected streamer
+13:50:53.169 Dropping new streamer connection, we already have a connected streamer
+13:50:53.218 Dropping new streamer connection, we already have a connected streamer
+13:50:53.266 Dropping new streamer connection, we already have a connected streamer
+13:50:53.329 Dropping new streamer connection, we already have a connected streamer
+13:50:53.386 Dropping new streamer connection, we already have a connected streamer
+13:50:53.431 Dropping new streamer connection, we already have a connected streamer
+13:50:53.487 Dropping new streamer connection, we already have a connected streamer
+13:50:53.545 Dropping new streamer connection, we already have a connected streamer
+13:50:53.598 Dropping new streamer connection, we already have a connected streamer
+13:50:53.652 Dropping new streamer connection, we already have a connected streamer
+13:50:53.702 Dropping new streamer connection, we already have a connected streamer
+13:50:53.751 Dropping new streamer connection, we already have a connected streamer
+13:50:53.800 Dropping new streamer connection, we already have a connected streamer
+13:50:53.847 Dropping new streamer connection, we already have a connected streamer
+13:50:53.900 Dropping new streamer connection, we already have a connected streamer
+13:50:53.958 Dropping new streamer connection, we already have a connected streamer
+13:50:54.010 Dropping new streamer connection, we already have a connected streamer
+13:50:54.061 Dropping new streamer connection, we already have a connected streamer
+13:50:54.110 Dropping new streamer connection, we already have a connected streamer
+13:50:54.164 Dropping new streamer connection, we already have a connected streamer
+13:50:54.229 Dropping new streamer connection, we already have a connected streamer
+13:50:54.276 Dropping new streamer connection, we already have a connected streamer
+13:50:54.332 Dropping new streamer connection, we already have a connected streamer
+13:50:54.379 Dropping new streamer connection, we already have a connected streamer
+13:50:54.426 Dropping new streamer connection, we already have a connected streamer
+13:50:54.474 Dropping new streamer connection, we already have a connected streamer
+13:50:54.525 Dropping new streamer connection, we already have a connected streamer
+13:50:54.580 Dropping new streamer connection, we already have a connected streamer
+13:50:54.622 Dropping new streamer connection, we already have a connected streamer
+13:50:54.671 Dropping new streamer connection, we already have a connected streamer
+13:50:54.721 Dropping new streamer connection, we already have a connected streamer
+13:50:54.768 Dropping new streamer connection, we already have a connected streamer
+13:50:54.818 Dropping new streamer connection, we already have a connected streamer
+13:50:54.872 Dropping new streamer connection, we already have a connected streamer
+13:50:54.916 Dropping new streamer connection, we already have a connected streamer
+13:50:54.971 Dropping new streamer connection, we already have a connected streamer
+13:50:55.017 Dropping new streamer connection, we already have a connected streamer
+13:50:55.060 Dropping new streamer connection, we already have a connected streamer
+13:50:55.108 Dropping new streamer connection, we already have a connected streamer
+13:50:55.153 Dropping new streamer connection, we already have a connected streamer
+13:50:55.203 Dropping new streamer connection, we already have a connected streamer
+13:50:55.254 Dropping new streamer connection, we already have a connected streamer
+13:50:55.316 Dropping new streamer connection, we already have a connected streamer
+13:50:55.372 Dropping new streamer connection, we already have a connected streamer
+13:50:55.417 Dropping new streamer connection, we already have a connected streamer
+13:50:55.467 Dropping new streamer connection, we already have a connected streamer
+13:50:55.511 Dropping new streamer connection, we already have a connected streamer
+13:50:55.561 Dropping new streamer connection, we already have a connected streamer
+13:50:55.611 Dropping new streamer connection, we already have a connected streamer
+13:50:55.664 Dropping new streamer connection, we already have a connected streamer
+13:50:55.721 Dropping new streamer connection, we already have a connected streamer
+13:50:55.773 Dropping new streamer connection, we already have a connected streamer
+13:50:55.824 Dropping new streamer connection, we already have a connected streamer
+13:50:55.866 Dropping new streamer connection, we already have a connected streamer
+13:50:55.907 Dropping new streamer connection, we already have a connected streamer
+13:50:55.960 Dropping new streamer connection, we already have a connected streamer
+13:50:56.005 Dropping new streamer connection, we already have a connected streamer
+13:50:56.062 Dropping new streamer connection, we already have a connected streamer
+13:50:56.074 Dropping new streamer connection, we already have a connected streamer
+13:50:56.116 Dropping new streamer connection, we already have a connected streamer
+13:50:56.169 Dropping new streamer connection, we already have a connected streamer
+13:50:56.215 Dropping new streamer connection, we already have a connected streamer
+13:50:56.257 Dropping new streamer connection, we already have a connected streamer
+13:50:56.311 Dropping new streamer connection, we already have a connected streamer
+13:50:56.361 Dropping new streamer connection, we already have a connected streamer
+13:50:56.410 Dropping new streamer connection, we already have a connected streamer
+13:50:56.460 Dropping new streamer connection, we already have a connected streamer
+13:50:56.508 Dropping new streamer connection, we already have a connected streamer
+13:50:56.555 Dropping new streamer connection, we already have a connected streamer
+13:50:56.610 Dropping new streamer connection, we already have a connected streamer
+13:50:56.664 Dropping new streamer connection, we already have a connected streamer
+13:50:56.714 Dropping new streamer connection, we already have a connected streamer
+13:50:56.770 Dropping new streamer connection, we already have a connected streamer
+13:50:56.821 Dropping new streamer connection, we already have a connected streamer
+13:50:56.869 Dropping new streamer connection, we already have a connected streamer
+13:50:56.918 Dropping new streamer connection, we already have a connected streamer
+13:50:56.971 Dropping new streamer connection, we already have a connected streamer
+13:50:57.024 Dropping new streamer connection, we already have a connected streamer
+13:50:57.067 Dropping new streamer connection, we already have a connected streamer
+13:50:57.113 Dropping new streamer connection, we already have a connected streamer
+13:50:57.166 Dropping new streamer connection, we already have a connected streamer
+13:50:57.212 Dropping new streamer connection, we already have a connected streamer
+13:50:57.263 Dropping new streamer connection, we already have a connected streamer
+13:50:57.309 Dropping new streamer connection, we already have a connected streamer
+13:50:57.354 Dropping new streamer connection, we already have a connected streamer
+13:50:57.405 Dropping new streamer connection, we already have a connected streamer
+13:50:57.452 Dropping new streamer connection, we already have a connected streamer
+13:50:57.500 Dropping new streamer connection, we already have a connected streamer
+13:50:57.540 Dropping new streamer connection, we already have a connected streamer
+13:50:57.587 Dropping new streamer connection, we already have a connected streamer
+13:50:57.636 Dropping new streamer connection, we already have a connected streamer
+13:50:57.695 Dropping new streamer connection, we already have a connected streamer
+13:50:57.758 Dropping new streamer connection, we already have a connected streamer
+13:50:57.811 Dropping new streamer connection, we already have a connected streamer
+13:50:57.856 Dropping new streamer connection, we already have a connected streamer
+13:50:57.907 Dropping new streamer connection, we already have a connected streamer
+13:50:57.970 Dropping new streamer connection, we already have a connected streamer
+13:50:58.027 Dropping new streamer connection, we already have a connected streamer
+13:50:58.079 Dropping new streamer connection, we already have a connected streamer
+13:50:58.137 Dropping new streamer connection, we already have a connected streamer
+13:50:58.190 Dropping new streamer connection, we already have a connected streamer
+13:50:58.246 Dropping new streamer connection, we already have a connected streamer
+13:50:58.295 Dropping new streamer connection, we already have a connected streamer
+13:50:58.343 Dropping new streamer connection, we already have a connected streamer
+13:50:58.396 Dropping new streamer connection, we already have a connected streamer
+13:50:58.443 Dropping new streamer connection, we already have a connected streamer
+13:50:58.483 Dropping new streamer connection, we already have a connected streamer
+13:50:58.530 Dropping new streamer connection, we already have a connected streamer
+13:50:58.575 Dropping new streamer connection, we already have a connected streamer
+13:50:58.624 Dropping new streamer connection, we already have a connected streamer
+13:50:58.662 Dropping new streamer connection, we already have a connected streamer
+13:50:58.710 Dropping new streamer connection, we already have a connected streamer
+13:50:58.766 Dropping new streamer connection, we already have a connected streamer
+13:50:58.813 Dropping new streamer connection, we already have a connected streamer
+13:50:58.866 Dropping new streamer connection, we already have a connected streamer
+13:50:58.918 Dropping new streamer connection, we already have a connected streamer
+13:50:58.972 Dropping new streamer connection, we already have a connected streamer
+13:50:59.015 Dropping new streamer connection, we already have a connected streamer
+13:50:59.061 Dropping new streamer connection, we already have a connected streamer
+13:50:59.111 Dropping new streamer connection, we already have a connected streamer
+13:50:59.158 Dropping new streamer connection, we already have a connected streamer
+13:50:59.204 Dropping new streamer connection, we already have a connected streamer
+13:50:59.257 Dropping new streamer connection, we already have a connected streamer
+13:50:59.305 Dropping new streamer connection, we already have a connected streamer
+13:50:59.357 Dropping new streamer connection, we already have a connected streamer
+13:50:59.418 Dropping new streamer connection, we already have a connected streamer
+13:50:59.454 Dropping new streamer connection, we already have a connected streamer
+13:50:59.503 Dropping new streamer connection, we already have a connected streamer
+13:50:59.562 Dropping new streamer connection, we already have a connected streamer
+13:50:59.617 Dropping new streamer connection, we already have a connected streamer
+13:50:59.660 Dropping new streamer connection, we already have a connected streamer
+13:50:59.714 Dropping new streamer connection, we already have a connected streamer
+13:50:59.769 Dropping new streamer connection, we already have a connected streamer
+13:50:59.820 Dropping new streamer connection, we already have a connected streamer
+13:50:59.862 Dropping new streamer connection, we already have a connected streamer
+13:50:59.906 Dropping new streamer connection, we already have a connected streamer
+13:50:59.949 Dropping new streamer connection, we already have a connected streamer
+13:50:59.994 Dropping new streamer connection, we already have a connected streamer
+13:51:00.047 Dropping new streamer connection, we already have a connected streamer
+13:51:00.102 Dropping new streamer connection, we already have a connected streamer
+13:51:00.156 Dropping new streamer connection, we already have a connected streamer
+13:51:00.201 Dropping new streamer connection, we already have a connected streamer
+13:51:00.252 Dropping new streamer connection, we already have a connected streamer
+13:51:00.303 Dropping new streamer connection, we already have a connected streamer
+13:51:00.355 Dropping new streamer connection, we already have a connected streamer
+13:51:00.404 Dropping new streamer connection, we already have a connected streamer
+13:51:00.445 Dropping new streamer connection, we already have a connected streamer
+13:51:00.494 Dropping new streamer connection, we already have a connected streamer
+13:51:00.544 Dropping new streamer connection, we already have a connected streamer
+13:51:00.593 Dropping new streamer connection, we already have a connected streamer
+13:51:00.639 Dropping new streamer connection, we already have a connected streamer
+13:51:00.688 Dropping new streamer connection, we already have a connected streamer
+13:51:00.738 Dropping new streamer connection, we already have a connected streamer
+13:51:00.792 Dropping new streamer connection, we already have a connected streamer
+13:51:00.839 Dropping new streamer connection, we already have a connected streamer
+13:51:00.891 Dropping new streamer connection, we already have a connected streamer
+13:51:00.940 Dropping new streamer connection, we already have a connected streamer
+13:51:00.984 Dropping new streamer connection, we already have a connected streamer
+13:51:01.024 Dropping new streamer connection, we already have a connected streamer
+13:51:01.061 Dropping new streamer connection, we already have a connected streamer
+13:51:01.076 Dropping new streamer connection, we already have a connected streamer
+13:51:01.129 Dropping new streamer connection, we already have a connected streamer
+13:51:01.185 Dropping new streamer connection, we already have a connected streamer
+13:51:01.242 Dropping new streamer connection, we already have a connected streamer
+13:51:01.302 Dropping new streamer connection, we already have a connected streamer
+13:51:01.355 Dropping new streamer connection, we already have a connected streamer
+13:51:01.416 Dropping new streamer connection, we already have a connected streamer
+13:51:01.466 Dropping new streamer connection, we already have a connected streamer
+13:51:01.517 Dropping new streamer connection, we already have a connected streamer
+13:51:01.564 Dropping new streamer connection, we already have a connected streamer
+13:51:01.612 Dropping new streamer connection, we already have a connected streamer
+13:51:01.660 Dropping new streamer connection, we already have a connected streamer
+13:51:01.710 Dropping new streamer connection, we already have a connected streamer
+13:51:01.754 Dropping new streamer connection, we already have a connected streamer
+13:51:01.800 Dropping new streamer connection, we already have a connected streamer
+13:51:01.846 Dropping new streamer connection, we already have a connected streamer
+13:51:01.894 Dropping new streamer connection, we already have a connected streamer
+13:51:01.943 Dropping new streamer connection, we already have a connected streamer
+13:51:01.994 Dropping new streamer connection, we already have a connected streamer
+13:51:02.049 Dropping new streamer connection, we already have a connected streamer
+13:51:02.097 Dropping new streamer connection, we already have a connected streamer
+13:51:02.147 Dropping new streamer connection, we already have a connected streamer
+13:51:02.193 Dropping new streamer connection, we already have a connected streamer
+13:51:02.243 Dropping new streamer connection, we already have a connected streamer
+13:51:02.300 Dropping new streamer connection, we already have a connected streamer
+13:51:02.354 Dropping new streamer connection, we already have a connected streamer
+13:51:02.407 Dropping new streamer connection, we already have a connected streamer
+13:51:02.455 Dropping new streamer connection, we already have a connected streamer
+13:51:02.502 Dropping new streamer connection, we already have a connected streamer
+13:51:02.555 Dropping new streamer connection, we already have a connected streamer
+13:51:02.595 Dropping new streamer connection, we already have a connected streamer
+13:51:02.636 Dropping new streamer connection, we already have a connected streamer
+13:51:02.685 Dropping new streamer connection, we already have a connected streamer
+13:51:02.744 Dropping new streamer connection, we already have a connected streamer
+13:51:02.807 Dropping new streamer connection, we already have a connected streamer
+13:51:02.865 Dropping new streamer connection, we already have a connected streamer
+13:51:02.919 Dropping new streamer connection, we already have a connected streamer
+13:51:02.971 Dropping new streamer connection, we already have a connected streamer
+13:51:03.013 Dropping new streamer connection, we already have a connected streamer
+13:51:03.060 Dropping new streamer connection, we already have a connected streamer
+13:51:03.114 Dropping new streamer connection, we already have a connected streamer
+13:51:03.172 Dropping new streamer connection, we already have a connected streamer
+13:51:03.217 Dropping new streamer connection, we already have a connected streamer
+13:51:03.276 Dropping new streamer connection, we already have a connected streamer
+13:51:03.330 Dropping new streamer connection, we already have a connected streamer
+13:51:03.373 Dropping new streamer connection, we already have a connected streamer
+13:51:03.420 Dropping new streamer connection, we already have a connected streamer
+13:51:03.475 Dropping new streamer connection, we already have a connected streamer
+13:51:03.519 Dropping new streamer connection, we already have a connected streamer
+13:51:03.571 Dropping new streamer connection, we already have a connected streamer
+13:51:03.625 Dropping new streamer connection, we already have a connected streamer
+13:51:03.679 Dropping new streamer connection, we already have a connected streamer

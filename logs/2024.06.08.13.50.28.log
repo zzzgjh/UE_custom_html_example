@@ -1,0 +1,236 @@
+13:50:28.351 Config: {
+	"UseFrontend": false,
+	"UseMatchmaker": false,
+	"UseHTTPS": false,
+	"UseAuthentication": false,
+	"LogToFile": true,
+	"LogVerbose": true,
+	"HomepageFile": "player.html",
+	"AdditionalRoutes": {},
+	"EnableWebserver": true,
+	"MatchmakerAddress": "",
+	"MatchmakerPort": "9999",
+	"PublicIp": "1.13.24.188",
+	"HttpPort": 80,
+	"HttpsPort": 443,
+	"StreamerPort": 8888,
+	"SFUPort": 8889,
+	"MaxPlayerCount": -1,
+	"peerConnectionOptions": "{ \"iceServers\": [{\"urls\": [\"stun:stun.l.google.com:19302\",\"turn:1.13.24.188:19303\"], \"username\": \"PixelStreamingUser\", \"credential\": \"AnotherTURNintheroad\"}] }"
+}
+13:50:28.876 peerConnectionOptions = {"iceServers":[{"urls":["stun:stun.l.google.com:19302","turn:1.13.24.188:19303"],"username":"PixelStreamingUser","credential":"AnotherTURNintheroad"}]}
+13:50:28.881 Running Cirrus - The Pixel Streaming reference implementation signalling server for Unreal Engine 5.1.
+13:50:29.059 WebSocket listening for Streamer connections on :8888
+13:50:29.061 WebSocket listening for SFU connections on :8889
+13:50:29.061 WebSocket listening for Players connections on :80
+13:50:29.063 Http listening on *: 80
+13:50:29.427 Streamer connected: ::ffff:115.216.54.191
+13:50:29.509 Dropping new streamer connection, we already have a connected streamer
+13:50:29.547 [37m-> Streamer[34m: {"sdp":"v=0\r\no=- 6084435410692853647 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 100 101 35 36 37 38 102 103 104 105 106 107 108 109 127 125 39 40 41 42 43 44 45 46 47 48 112 113 114 115 116 117 118 49\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:3vpm\r\na=ice-pwd:mCXSPHkPAdadoCB68rw5G2cC\r\na=ice-options:trickle\r\na=fingerprint:sha-256 4E:54:61:81:6F:4A:8E:D8:C9:43:88:BC:3D:40:6F:B8:99:D3:64:CE:EC:55:32:B6:26:EB:A1:55:90:99:1C:0C\r\na=setup:actpass\r\na=mid:0\r\na=extmap:1 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 urn:3gpp:video-orientation\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:100 VP9/90000\r\na=rtcp-fb:100 goog-remb\r\na=rtcp-fb:100 transport-cc\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 nack pli\r\na=fmtp:100 profile-id=2\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\na=rtpmap:35 VP9/90000\r\na=rtcp-fb:35 goog-remb\r\na=rtcp-fb:35 transport-cc\r\na=rtcp-fb:35 ccm fir\r\na=rtcp-fb:35 nack\r\na=rtcp-fb:35 nack pli\r\na=fmtp:35 profile-id=1\r\na=rtpmap:36 rtx/90000\r\na=fmtp:36 apt=35\r\na=rtpmap:37 VP9/90000\r\na=rtcp-fb:37 goog-remb\r\na=rtcp-fb:37 transport-cc\r\na=rtcp-fb:37 ccm fir\r\na=rtcp-fb:37 nack\r\na=rtcp-fb:37 nack pli\r\na=fmtp:37 profile-id=3\r\na=rtpmap:38 rtx/90000\r\na=fmtp:38 apt=37\r\na=rtpmap:102 H264/90000\r\na=rtcp-fb:102 goog-remb\r\na=rtcp-fb:102 transport-cc\r\na=rtcp-fb:102 ccm fir\r\na=rtcp-fb:102 nack\r\na=rtcp-fb:102 nack pli\r\na=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f\r\na=rtpmap:103 rtx/90000\r\na=fmtp:103 apt=102\r\na=rtpmap:104 H264/90000\r\na=rtcp-fb:104 goog-remb\r\na=rtcp-fb:104 transport-cc\r\na=rtcp-fb:104 ccm fir\r\na=rtcp-fb:104 nack\r\na=rtcp-fb:104 nack pli\r\na=fmtp:104 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42001f\r\na=rtpmap:105 rtx/90000\r\na=fmtp:105 apt=104\r\na=rtpmap:106 H264/90000\r\na=rtcp-fb:106 goog-remb\r\na=rtcp-fb:106 transport-cc\r\na=rtcp-fb:106 ccm fir\r\na=rtcp-fb:106 nack\r\na=rtcp-fb:106 nack pli\r\na=fmtp:106 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:107 rtx/90000\r\na=fmtp:107 apt=106\r\na=rtpmap:108 H264/90000\r\na=rtcp-fb:108 goog-remb\r\na=rtcp-fb:108 transport-cc\r\na=rtcp-fb:108 ccm fir\r\na=rtcp-fb:108 nack\r\na=rtcp-fb:108 nack pli\r\na=fmtp:108 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42e01f\r\na=rtpmap:109 rtx/90000\r\na=fmtp:109 apt=108\r\na=rtpmap:127 H264/90000\r\na=rtcp-fb:127 goog-remb\r\na=rtcp-fb:127 transport-cc\r\na=rtcp-fb:127 ccm fir\r\na=rtcp-fb:127 nack\r\na=rtcp-fb:127 nack pli\r\na=fmtp:127 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f\r\na=rtpmap:125 rtx/90000\r\na=fmtp:125 apt=127\r\na=rtpmap:39 H264/90000\r\na=rtcp-fb:39 goog-remb\r\na=rtcp-fb:39 transport-cc\r\na=rtcp-fb:39 ccm fir\r\na=rtcp-fb:39 nack\r\na=rtcp-fb:39 nack pli\r\na=fmtp:39 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=4d001f\r\na=rtpmap:40 rtx/90000\r\na=fmtp:40 apt=39\r\na=rtpmap:41 H264/90000\r\na=rtcp-fb:41 goog-remb\r\na=rtcp-fb:41 transport-cc\r\na=rtcp-fb:41 ccm fir\r\na=rtcp-fb:41 nack\r\na=rtcp-fb:41 nack pli\r\na=fmtp:41 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=f4001f\r\na=rtpmap:42 rtx/90000\r\na=fmtp:42 apt=41\r\na=rtpmap:43 H264/90000\r\na=rtcp-fb:43 goog-remb\r\na=rtcp-fb:43 transport-cc\r\na=rtcp-fb:43 ccm fir\r\na=rtcp-fb:43 nack\r\na=rtcp-fb:43 nack pli\r\na=fmtp:43 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=f4001f\r\na=rtpmap:44 rtx/90000\r\na=fmtp:44 apt=43\r\na=rtpmap:45 AV1/90000\r\na=rtcp-fb:45 goog-remb\r\na=rtcp-fb:45 transport-cc\r\na=rtcp-fb:45 ccm fir\r\na=rtcp-fb:45 nack\r\na=rtcp-fb:45 nack pli\r\na=fmtp:45 level-idx=5;profile=0;tier=0\r\na=rtpmap:46 rtx/90000\r\na=fmtp:46 apt=45\r\na=rtpmap:47 AV1/90000\r\na=rtcp-fb:47 goog-remb\r\na=rtcp-fb:47 transport-cc\r\na=rtcp-fb:47 ccm fir\r\na=rtcp-fb:47 nack\r\na=rtcp-fb:47 nack pli\r\na=fmtp:47 level-idx=5;profile=1;tier=0\r\na=rtpmap:48 rtx/90000\r\na=fmtp:48 apt=47\r\na=rtpmap:112 H264/90000\r\na=rtcp-fb:112 goog-remb\r\na=rtcp-fb:112 transport-cc\r\na=rtcp-fb:112 ccm fir\r\na=rtcp-fb:112 nack\r\na=rtcp-fb:112 nack pli\r\na=fmtp:112 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=64001f\r\na=rtpmap:113 rtx/90000\r\na=fmtp:113 apt=112\r\na=rtpmap:114 H264/90000\r\na=rtcp-fb:114 goog-remb\r\na=rtcp-fb:114 transport-cc\r\na=rtcp-fb:114 ccm fir\r\na=rtcp-fb:114 nack\r\na=rtcp-fb:114 nack pli\r\na=fmtp:114 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=64001f\r\na=rtpmap:115 rtx/90000\r\na=fmtp:115 apt=114\r\na=rtpmap:116 red/90000\r\na=rtpmap:117 rtx/90000\r\na=fmtp:117 apt=116\r\na=rtpmap:118 ulpfec/90000\r\na=rtpmap:49 flexfec-03/90000\r\na=rtcp-fb:49 goog-remb\r\na=rtcp-fb:49 transport-cc\r\na=fmtp:49 repair-window=10000000\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 63 9 0 8 110 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:3vpm\r\na=ice-pwd:mCXSPHkPAdadoCB68rw5G2cC\r\na=ice-options:trickle\r\na=fingerprint:sha-256 4E:54:61:81:6F:4A:8E:D8:C9:43:88:BC:3D:40:6F:B8:99:D3:64:CE:EC:55:32:B6:26:EB:A1:55:90:99:1C:0C\r\na=setup:actpass\r\na=mid:1\r\na=extmap:14 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;maxaveragebitrate=510000;stereo=1;useinbandfec=1\r\na=rtpmap:63 red/48000/2\r\na=fmtp:63 111/111\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:126 telephone-event/8000\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:3vpm\r\na=ice-pwd:mCXSPHkPAdadoCB68rw5G2cC\r\na=ice-options:trickle\r\na=fingerprint:sha-256 4E:54:61:81:6F:4A:8E:D8:C9:43:88:BC:3D:40:6F:B8:99:D3:64:CE:EC:55:32:B6:26:EB:A1:55:90:99:1C:0C\r\na=setup:actpass\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n","type":"offer"}
+13:50:29.551 dropped message offer as the player undefined is not found
+13:50:29.552 [37m-> Streamer[34m: {"type":"iceCandidate","candidate":{"candidate":"candidate:3748786148 1 udp 2113937151 7a110ff1-3786-4a1f-b392-29c9eb91ee76.local 62614 typ host generation 0 ufrag 3vpm network-cost 999","sdpMid":"0","sdpMLineIndex":0,"usernameFragment":"3vpm"}}
+13:50:29.553 dropped message iceCandidate as the player undefined is not found
+13:50:29.553 [37m-> Streamer[34m: {"type":"iceCandidate","candidate":{"candidate":"candidate:3748786148 1 udp 2113937151 7a110ff1-3786-4a1f-b392-29c9eb91ee76.local 62616 typ host generation 0 ufrag 3vpm network-cost 999","sdpMid":"1","sdpMLineIndex":1,"usernameFragment":"3vpm"}}
+13:50:29.554 dropped message iceCandidate as the player undefined is not found
+13:50:29.554 [37m-> Streamer[34m: {"type":"iceCandidate","candidate":{"candidate":"candidate:3748786148 1 udp 2113937151 7a110ff1-3786-4a1f-b392-29c9eb91ee76.local 62618 typ host generation 0 ufrag 3vpm network-cost 999","sdpMid":"2","sdpMLineIndex":2,"usernameFragment":"3vpm"}}
+13:50:29.554 dropped message iceCandidate as the player undefined is not found
+13:50:29.555 [37m-> Streamer[34m: {"type":"iceCandidate","candidate":{"candidate":"candidate:1389254483 1 udp 1677729535 115.216.54.191 2159 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag 3vpm network-cost 999","sdpMid":"0","sdpMLineIndex":0,"usernameFragment":"3vpm"}}
+13:50:29.556 dropped message iceCandidate as the player undefined is not found
+13:50:29.556 [37m-> Streamer[34m: {"type":"iceCandidate","candidate":{"candidate":"candidate:1389254483 1 udp 1677729535 115.216.54.191 2161 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag 3vpm network-cost 999","sdpMid":"2","sdpMLineIndex":2,"usernameFragment":"3vpm"}}
+13:50:29.557 dropped message iceCandidate as the player undefined is not found
+13:50:29.557 [37m-> Streamer[34m: {"type":"iceCandidate","candidate":{"candidate":"candidate:1389254483 1 udp 1677729535 115.216.54.191 2160 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag 3vpm network-cost 999","sdpMid":"1","sdpMLineIndex":1,"usernameFragment":"3vpm"}}
+13:50:29.558 dropped message iceCandidate as the player undefined is not found
+13:50:29.568 Dropping new streamer connection, we already have a connected streamer
+13:50:29.616 Dropping new streamer connection, we already have a connected streamer
+13:50:29.655 Dropping new streamer connection, we already have a connected streamer
+13:50:29.702 Dropping new streamer connection, we already have a connected streamer
+13:50:29.752 Dropping new streamer connection, we already have a connected streamer
+13:50:29.799 Dropping new streamer connection, we already have a connected streamer
+13:50:29.851 Dropping new streamer connection, we already have a connected streamer
+13:50:29.897 Dropping new streamer connection, we already have a connected streamer
+13:50:29.945 Dropping new streamer connection, we already have a connected streamer
+13:50:29.998 Dropping new streamer connection, we already have a connected streamer
+13:50:30.051 Dropping new streamer connection, we already have a connected streamer
+13:50:30.098 Dropping new streamer connection, we already have a connected streamer
+13:50:30.148 Dropping new streamer connection, we already have a connected streamer
+13:50:30.196 Dropping new streamer connection, we already have a connected streamer
+13:50:30.250 Dropping new streamer connection, we already have a connected streamer
+13:50:30.302 Dropping new streamer connection, we already have a connected streamer
+13:50:30.346 Dropping new streamer connection, we already have a connected streamer
+13:50:30.388 Dropping new streamer connection, we already have a connected streamer
+13:50:30.432 Dropping new streamer connection, we already have a connected streamer
+13:50:30.480 Dropping new streamer connection, we already have a connected streamer
+13:50:30.526 Dropping new streamer connection, we already have a connected streamer
+13:50:30.574 Dropping new streamer connection, we already have a connected streamer
+13:50:30.627 Dropping new streamer connection, we already have a connected streamer
+13:50:30.679 Dropping new streamer connection, we already have a connected streamer
+13:50:30.718 Dropping new streamer connection, we already have a connected streamer
+13:50:30.773 Dropping new streamer connection, we already have a connected streamer
+13:50:30.829 Dropping new streamer connection, we already have a connected streamer
+13:50:30.875 Dropping new streamer connection, we already have a connected streamer
+13:50:30.915 Dropping new streamer connection, we already have a connected streamer
+13:50:30.957 Dropping new streamer connection, we already have a connected streamer
+13:50:31.003 Dropping new streamer connection, we already have a connected streamer
+13:50:31.052 Dropping new streamer connection, we already have a connected streamer
+13:50:31.101 Dropping new streamer connection, we already have a connected streamer
+13:50:31.149 Dropping new streamer connection, we already have a connected streamer
+13:50:31.199 Dropping new streamer connection, we already have a connected streamer
+13:50:31.254 Dropping new streamer connection, we already have a connected streamer
+13:50:31.267 [37m-> Streamer[34m: {"type":"iceCandidate","candidate":{"candidate":"candidate:1389254483 1 udp 1677729535 115.216.54.191 2169 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag 3vpm network-cost 999","sdpMid":"2","sdpMLineIndex":2,"usernameFragment":"3vpm"}}
+13:50:31.267 dropped message iceCandidate as the player undefined is not found
+13:50:31.268 [37m-> Streamer[34m: {"type":"iceCandidate","candidate":{"candidate":"candidate:1389254483 1 udp 1677729535 115.216.54.191 2168 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag 3vpm network-cost 999","sdpMid":"1","sdpMLineIndex":1,"usernameFragment":"3vpm"}}
+13:50:31.268 dropped message iceCandidate as the player undefined is not found
+13:50:31.269 [37m-> Streamer[34m: {"type":"iceCandidate","candidate":{"candidate":"candidate:1389254483 1 udp 1677729535 115.216.54.191 2167 typ srflx raddr 0.0.0.0 rport 0 generation 0 ufrag 3vpm network-cost 999","sdpMid":"0","sdpMLineIndex":0,"usernameFragment":"3vpm"}}
+13:50:31.269 dropped message iceCandidate as the player undefined is not found
+13:50:31.304 Dropping new streamer connection, we already have a connected streamer
+13:50:31.355 Dropping new streamer connection, we already have a connected streamer
+13:50:31.379 [37m-> Streamer[34m: {"type":"iceCandidate","candidate":{"candidate":"candidate:1317398688 1 udp 33562623 1.13.24.188 57230 typ relay raddr 115.216.54.191 rport 2169 generation 0 ufrag 3vpm network-cost 999","sdpMid":"2","sdpMLineIndex":2,"usernameFragment":"3vpm"}}
+13:50:31.380 dropped message iceCandidate as the player undefined is not found
+13:50:31.380 [37m-> Streamer[34m: {"type":"iceCandidate","candidate":{"candidate":"candidate:1317398688 1 udp 33562623 1.13.24.188 64003 typ relay raddr 115.216.54.191 rport 2168 generation 0 ufrag 3vpm network-cost 999","sdpMid":"1","sdpMLineIndex":1,"usernameFragment":"3vpm"}}
+13:50:31.381 dropped message iceCandidate as the player undefined is not found
+13:50:31.381 [37m-> Streamer[34m: {"type":"iceCandidate","candidate":{"candidate":"candidate:1317398688 1 udp 33562623 1.13.24.188 60534 typ relay raddr 115.216.54.191 rport 2167 generation 0 ufrag 3vpm network-cost 999","sdpMid":"0","sdpMLineIndex":0,"usernameFragment":"3vpm"}}
+13:50:31.382 dropped message iceCandidate as the player undefined is not found
+13:50:31.403 Dropping new streamer connection, we already have a connected streamer
+13:50:31.452 Dropping new streamer connection, we already have a connected streamer
+13:50:31.505 Dropping new streamer connection, we already have a connected streamer
+13:50:31.548 Dropping new streamer connection, we already have a connected streamer
+13:50:31.593 Dropping new streamer connection, we already have a connected streamer
+13:50:31.638 Dropping new streamer connection, we already have a connected streamer
+13:50:31.682 Dropping new streamer connection, we already have a connected streamer
+13:50:31.738 Dropping new streamer connection, we already have a connected streamer
+13:50:31.789 Dropping new streamer connection, we already have a connected streamer
+13:50:31.852 Dropping new streamer connection, we already have a connected streamer
+13:50:31.908 Dropping new streamer connection, we already have a connected streamer
+13:50:31.962 Dropping new streamer connection, we already have a connected streamer
+13:50:32.016 Dropping new streamer connection, we already have a connected streamer
+13:50:32.069 Dropping new streamer connection, we already have a connected streamer
+13:50:32.120 Dropping new streamer connection, we already have a connected streamer
+13:50:32.176 Dropping new streamer connection, we already have a connected streamer
+13:50:32.225 Dropping new streamer connection, we already have a connected streamer
+13:50:32.278 Dropping new streamer connection, we already have a connected streamer
+13:50:32.325 Dropping new streamer connection, we already have a connected streamer
+13:50:32.375 Dropping new streamer connection, we already have a connected streamer
+13:50:32.423 Dropping new streamer connection, we already have a connected streamer
+13:50:32.467 Dropping new streamer connection, we already have a connected streamer
+13:50:32.518 Dropping new streamer connection, we already have a connected streamer
+13:50:32.564 Dropping new streamer connection, we already have a connected streamer
+13:50:32.617 Dropping new streamer connection, we already have a connected streamer
+13:50:32.660 Dropping new streamer connection, we already have a connected streamer
+13:50:32.714 Dropping new streamer connection, we already have a connected streamer
+13:50:32.776 Dropping new streamer connection, we already have a connected streamer
+13:50:32.832 Dropping new streamer connection, we already have a connected streamer
+13:50:32.879 Dropping new streamer connection, we already have a connected streamer
+13:50:32.932 Dropping new streamer connection, we already have a connected streamer
+13:50:32.985 Dropping new streamer connection, we already have a connected streamer
+13:50:33.036 Dropping new streamer connection, we already have a connected streamer
+13:50:33.091 Dropping new streamer connection, we already have a connected streamer
+13:50:33.146 Dropping new streamer connection, we already have a connected streamer
+13:50:33.198 Dropping new streamer connection, we already have a connected streamer
+13:50:33.255 Dropping new streamer connection, we already have a connected streamer
+13:50:33.306 Dropping new streamer connection, we already have a connected streamer
+13:50:33.352 Dropping new streamer connection, we already have a connected streamer
+13:50:33.399 Dropping new streamer connection, we already have a connected streamer
+13:50:33.448 Dropping new streamer connection, we already have a connected streamer
+13:50:33.502 Dropping new streamer connection, we already have a connected streamer
+13:50:33.550 Dropping new streamer connection, we already have a connected streamer
+13:50:33.596 Dropping new streamer connection, we already have a connected streamer
+13:50:33.647 Dropping new streamer connection, we already have a connected streamer
+13:50:33.694 Dropping new streamer connection, we already have a connected streamer
+13:50:33.746 Dropping new streamer connection, we already have a connected streamer
+13:50:33.794 Dropping new streamer connection, we already have a connected streamer
+13:50:33.848 Dropping new streamer connection, we already have a connected streamer
+13:50:33.898 Dropping new streamer connection, we already have a connected streamer
+13:50:33.958 Dropping new streamer connection, we already have a connected streamer
+13:50:34.008 Dropping new streamer connection, we already have a connected streamer
+13:50:34.053 Dropping new streamer connection, we already have a connected streamer
+13:50:34.099 Dropping new streamer connection, we already have a connected streamer
+13:50:34.152 Dropping new streamer connection, we already have a connected streamer
+13:50:34.190 Dropping new streamer connection, we already have a connected streamer
+13:50:34.240 Dropping new streamer connection, we already have a connected streamer
+13:50:34.285 Dropping new streamer connection, we already have a connected streamer
+13:50:34.337 Dropping new streamer connection, we already have a connected streamer
+13:50:34.391 Dropping new streamer connection, we already have a connected streamer
+13:50:34.449 Dropping new streamer connection, we already have a connected streamer
+13:50:34.512 Dropping new streamer connection, we already have a connected streamer
+13:50:34.568 Dropping new streamer connection, we already have a connected streamer
+13:50:34.617 Dropping new streamer connection, we already have a connected streamer
+13:50:34.676 Dropping new streamer connection, we already have a connected streamer
+13:50:34.737 Dropping new streamer connection, we already have a connected streamer
+13:50:34.798 Dropping new streamer connection, we already have a connected streamer
+13:50:34.850 Dropping new streamer connection, we already have a connected streamer
+13:50:34.903 Dropping new streamer connection, we already have a connected streamer
+13:50:34.953 Dropping new streamer connection, we already have a connected streamer
+13:50:35.004 Dropping new streamer connection, we already have a connected streamer
+13:50:35.059 Dropping new streamer connection, we already have a connected streamer
+13:50:35.111 Dropping new streamer connection, we already have a connected streamer
+13:50:35.151 Dropping new streamer connection, we already have a connected streamer
+13:50:35.200 Dropping new streamer connection, we already have a connected streamer
+13:50:35.245 Dropping new streamer connection, we already have a connected streamer
+13:50:35.292 Dropping new streamer connection, we already have a connected streamer
+13:50:35.350 Dropping new streamer connection, we already have a connected streamer
+13:50:35.403 Dropping new streamer connection, we already have a connected streamer
+13:50:35.448 Dropping new streamer connection, we already have a connected streamer
+13:50:35.501 Dropping new streamer connection, we already have a connected streamer
+13:50:35.561 Dropping new streamer connection, we already have a connected streamer
+13:50:35.605 Dropping new streamer connection, we already have a connected streamer
+13:50:35.662 Dropping new streamer connection, we already have a connected streamer
+13:50:35.717 Dropping new streamer connection, we already have a connected streamer
+13:50:35.775 Dropping new streamer connection, we already have a connected streamer
+13:50:35.820 Dropping new streamer connection, we already have a connected streamer
+13:50:35.861 Dropping new streamer connection, we already have a connected streamer
+13:50:35.905 Dropping new streamer connection, we already have a connected streamer
+13:50:35.951 Dropping new streamer connection, we already have a connected streamer
+13:50:35.997 Dropping new streamer connection, we already have a connected streamer
+13:50:36.043 Dropping new streamer connection, we already have a connected streamer
+13:50:36.088 Dropping new streamer connection, we already have a connected streamer
+13:50:36.142 Dropping new streamer connection, we already have a connected streamer
+13:50:36.193 Dropping new streamer connection, we already have a connected streamer
+13:50:36.241 Dropping new streamer connection, we already have a connected streamer
+13:50:36.287 Dropping new streamer connection, we already have a connected streamer
+13:50:36.335 Dropping new streamer connection, we already have a connected streamer
+13:50:36.385 Dropping new streamer connection, we already have a connected streamer
+13:50:36.438 Dropping new streamer connection, we already have a connected streamer
+13:50:36.480 Dropping new streamer connection, we already have a connected streamer
+13:50:36.529 Dropping new streamer connection, we already have a connected streamer
+13:50:36.586 Dropping new streamer connection, we already have a connected streamer
+13:50:36.631 Dropping new streamer connection, we already have a connected streamer
+13:50:36.678 Dropping new streamer connection, we already have a connected streamer
+13:50:36.731 Dropping new streamer connection, we already have a connected streamer
+13:50:36.783 Dropping new streamer connection, we already have a connected streamer
+13:50:36.830 Dropping new streamer connection, we already have a connected streamer
+13:50:36.870 Dropping new streamer connection, we already have a connected streamer
+13:50:36.917 Dropping new streamer connection, we already have a connected streamer
+13:50:36.964 Dropping new streamer connection, we already have a connected streamer
+13:50:37.006 Dropping new streamer connection, we already have a connected streamer
+13:50:37.046 Dropping new streamer connection, we already have a connected streamer
+13:50:37.093 Dropping new streamer connection, we already have a connected streamer
+13:50:37.143 Dropping new streamer connection, we already have a connected streamer
+13:50:37.197 Dropping new streamer connection, we already have a connected streamer
+13:50:37.247 Dropping new streamer connection, we already have a connected streamer
+13:50:37.297 Dropping new streamer connection, we already have a connected streamer
+13:50:37.354 Dropping new streamer connection, we already have a connected streamer
+13:50:37.413 Dropping new streamer connection, we already have a connected streamer
+13:50:37.463 Dropping new streamer connection, we already have a connected streamer
+13:50:37.515 Dropping new streamer connection, we already have a connected streamer
+13:50:37.568 Dropping new streamer connection, we already have a connected streamer
+13:50:37.612 Dropping new streamer connection, we already have a connected streamer
+13:50:37.655 Dropping new streamer connection, we already have a connected streamer
+13:50:37.706 Dropping new streamer connection, we already have a connected streamer
+13:50:37.763 Dropping new streamer connection, we already have a connected streamer
+13:50:37.811 Dropping new streamer connection, we already have a connected streamer
+13:50:37.859 Dropping new streamer connection, we already have a connected streamer
+13:50:37.913 Dropping new streamer connection, we already have a connected streamer
+13:50:37.961 Dropping new streamer connection, we already have a connected streamer
+13:50:38.013 Dropping new streamer connection, we already have a connected streamer
+13:50:38.064 Dropping new streamer connection, we already have a connected streamer
+13:50:38.116 Dropping new streamer connection, we already have a connected streamer
+13:50:38.171 Dropping new streamer connection, we already have a connected streamer
+13:50:38.230 Dropping new streamer connection, we already have a connected streamer
+13:50:38.287 Dropping new streamer connection, we already have a connected streamer
+13:50:38.338 Dropping new streamer connection, we already have a connected streamer
+13:50:38.391 Dropping new streamer connection, we already have a connected streamer
+13:50:38.433 Dropping new streamer connection, we already have a connected streamer
+13:50:38.474 Dropping new streamer connection, we already have a connected streamer
+13:50:38.515 Dropping new streamer connection, we already have a connected streamer
+13:50:38.566 Dropping new streamer connection, we already have a connected streamer
+13:50:38.606 Dropping new streamer connection, we already have a connected streamer
